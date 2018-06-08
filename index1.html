@@ -4,392 +4,150 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <meta name="author" content="eronelit.com">
+    <link rel="icon" href="http://eronelit.com/logo.ico">
+    <meta name="theme-color" content="#DAA520">
 
-    <title>Album example for Bootstrap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+    <title>Eronelit | STATUS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
     <link href="tmp/1query/bootstrap.min.css" rel="stylesheet">
-    <link href="tmp/1query/F32.css" rel="stylesheet" />
-    <link href="tmp/1query/fae/css/style.css" rel="stylesheet" />
 
+    <link href="tmp/1query/D3/D3.css" rel="stylesheet" />
+    <link href="tmp/1query/F32.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="tmp/1query/album.css" rel="stylesheet">
 </head>
 
-<body onkeydown="fa3()" onkeypress="fa3()" onkeyup="fa3()" >
-  <style>
-     body {
-          overflow-y:auto;
-      }
-  </style>
-    <script>
-        fa3(){
-            var ev = (!e) ? window.event : e;//IE:Moz
-            if (ev.keyCode == 8) {
-                return false;
-            }
-            if ((ev.altKey == true) & amp;& amp; (ev.keyCode >= 65) & amp;& amp; (ev.keyCode <= 90))
-            {
-                return false;
-            }
-            // http://www.infysolutions.com
+<body class="body" onkeydown="return false;" onkeypress="return false;" onkeyup="return false;" onload="setTimeout(onload1, 5000);">
 
-            if ((ev.altKey == true) || (ev.ctrlKey == true)) {
-                return false;
-            }
+    <script>
+        function onload1() {
+
+            document.getElementById("root").style = "display: none;";
+            document.getElementById("main2").style = "display: block;";
+
         }
     </script>
-   
+    <div id="root">
+        <div class='loader-container'>
+            <div class='loader'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="850" height="850" viewBox="0 0 850 850">
+                    <g id='circles'>
+                        <circle class='bg' fill="none" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+                        <circle class='fast' fill="none" stroke="#000" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
 
-    <!-- loader -->
-    <!--begin wrapper-->
+                        <circle class='slow' fill="none" stroke-width="10" stroke-miterlimit="10" cx="425" cy="425" r="400" />
+                    </g>
+                    <g id='hexas'>
+                        <path d="M334.145 358.92c-2.7 1.56-7.12 1.56-9.82 0l-77.152-44.545c-2.7-1.56-4.91-5.386-4.91-8.504v-89.086c0-3.118 2.21-6.945 4.91-8.504l77.154-44.545c2.7-1.56 7.12-1.56 9.82 0l77.152 44.544c2.7 1.558 4.91 5.385 4.91 8.503v89.09c0 3.117-2.21 6.944-4.91 8.503l-77.155 44.544z" />
 
+                        <path d="M521.262 359.014c-2.7 1.56-7.12 1.56-9.82 0L434.29 314.47c-2.7-1.56-4.91-5.387-4.91-8.505v-89.087c0-3.118 2.208-6.945 4.91-8.504l77.153-44.545c2.7-1.56 7.12-1.56 9.82 0l77.152 44.542c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.117-2.21 6.944-4.91 8.503l-77.153 44.544z" />
 
-  <main role="main" id="main2">
-      <h5 class="card-title1">Eronelit | JGA EMPIRE : SYSTEMS STATUS</h5>
-      <!--<section class="jumbotron text-center">
-        <div class="container">
-            <h1 class="jumbotron-heading">Album example</h1>
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-            <p>
-                <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-            </p>
+                        <path d="M614.9 521.2c-2.7 1.56-7.118 1.56-9.818 0l-77.153-44.543c-2.7-1.56-4.91-5.386-4.91-8.504v-89.088c0-3.118 2.208-6.945 4.91-8.504l77.153-44.544c2.7-1.56 7.12-1.56 9.82 0l77.15 44.544c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.117-2.208 6.943-4.91 8.503L614.902 521.2z" />
+
+                        <path d="M521.424 683.294c-2.7 1.56-7.12 1.56-9.82 0l-77.153-44.545c-2.7-1.56-4.91-5.387-4.91-8.505v-89.088c0-3.118 2.21-6.944 4.91-8.504l77.156-44.543c2.7-1.56 7.12-1.56 9.82 0l77.15 44.543c2.7 1.56 4.91 5.386 4.91 8.504v89.09c0 3.118-2.208 6.944-4.91 8.504l-77.152 44.544z" />
+
+                        <path d="M333.73 683.534c-2.7 1.56-7.118 1.56-9.818 0L246.76 638.99c-2.7-1.56-4.91-5.385-4.91-8.503v-89.09c0-3.118 2.21-6.944 4.91-8.504l77.153-44.543c2.7-1.56 7.12-1.56 9.82 0l77.152 44.543c2.7 1.56 4.91 5.386 4.91 8.504v89.088c0 3.118-2.21 6.944-4.91 8.504l-77.154 44.544z" />
+
+                        <path d="M240.09 521.345c-2.7 1.56-7.118 1.56-9.818 0l-77.153-44.543c-2.7-1.56-4.91-5.386-4.91-8.504V379.21c0-3.118 2.21-6.945 4.91-8.504l77.153-44.545c2.7-1.558 7.12-1.558 9.82 0l77.152 44.545c2.7 1.56 4.91 5.386 4.91 8.504v89.088c0 3.118-2.21 6.944-4.91 8.504l-77.154 44.543z" />
+
+                        <path d="M427.785 521.106c-2.7 1.56-7.12 1.56-9.82 0l-77.152-44.545c-2.7-1.56-4.91-5.385-4.91-8.503V378.97c0-3.118 2.21-6.945 4.91-8.504l77.153-44.545c2.7-1.558 7.12-1.558 9.82 0l77.153 44.545c2.7 1.56 4.91 5.386 4.91 8.504v89.087c0 3.118-2.21 6.944-4.91 8.504l-77.155 44.546z" />
+                    </g>
+                </svg>
+            </div>
         </div>
-    </section>-->
-
-      <div class="card mb-3 card-header" style="margin:50px;">
-          <div class="card-body ">
-              <h5 class="card-title">
-                  What is this page?
-              </h5>
-              <p class="card-text">
-                  Eronelit ensures the performance and security of site owners over their intelligent global network.
-                  <br />Among them are Servers that are for clients, my servers, test servers, Orbital Systems, JGA systems and others ...
-              </p>
-
-          </div>
-      </div>
-
-      <div class="card mb-3 card-header status" style="margin:50px;">
-          <div class="card-body ">
-
-              <p class="card-text bg32f">
-                  All Systems Operational
-              </p>
-
-          </div>
-      </div>
-
-      <div class="card mb-3 card-header fa3" style="margin:50px;">
-          <div class="card-body continet1">
-
-              <div class="accordion fa4f" id="accordionExample">
-                  <div class="card">
-
-
-
-
-                      <div class="card-header" id="headingOne">
-                          <h5 class="mb-0">
-
-
-
-                              <button class="btn btn-link" type="button" onclick="da1()" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
-
-
-
-                                  Eronelit JGA System for clients | Continents
-                              </button>
-
-                          </h5>
-                      </div>
-
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                          <div class="card-body">
-
-                              <div class="accordion fa4f" id="accordionExample">
-                                  <div class="card">
-                                      <div class="card-header" id="headingOne">
-                                          <h5 class="mb-0">
-
-
-
-                                              <button class="btn btn-link" type="button" onclick="da1()" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
-
-
-
-
-                                                  Africa
-                                              </button>
-
-                                          </h5>
-                                      </div>
-
-                                      <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample1">
-                                          <div class="card-body">
-                                              <i class="fas fa-circle status_F"></i>
-
-
-                                              All Systems Operational
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="card">
-                                      <div class="card-header" id="headingTwo">
-                                          <h5 class="mb-0">
-                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo">
-                                                  Asia
-                                              </button>
-                                          </h5>
-                                      </div>
-                                      <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample2">
-                                          <div class="card-body">
-                                              <i class="fas fa-circle status_F"></i>
-
-
-                                              All Systems Operational
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="card">
-                                      <div class="card-header" id="headingThree">
-                                          <h5 class="mb-0">
-                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree">
-                                                  Europe
-                                              </button>
-                                          </h5>
-                                      </div>
-                                      <div id="collapseThree1" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample3">
-                                          <div class="card-body">
-                                              <i class="fas fa-circle status_F"></i>
-
-
-                                              All Systems Operational
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="card">
-                                      <div class="card-header" id="headingThree">
-                                          <h5 class="mb-0">
-                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree">
-                                                  Antartica
-                                              </button>
-                                          </h5>
-                                      </div>
-                                      <div id="collapseThree2" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample4">
-                                          <div class="card-body">
-                                              <i class="fas fa-circle status_F"></i>
-
-
-                                              All Systems Operational
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="card">
-                                      <div class="card-header" id="headingThree">
-                                          <h5 class="mb-0">
-                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree">
-                                                  North America
-                                              </button>
-                                          </h5>
-                                      </div>
-                                      <div id="collapseThree3" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample5">
-                                          <div class="card-body">
-                                              <i class="fas fa-circle status_F"></i>
-
-
-                                              All Systems Operational
-                                          </div>
-                                      </div>
-                                  </div>
-
-
-
-                                  <div class="card">
-                                      <div class="card-header" id="headingThree">
-                                          <h5 class="mb-0">
-                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree">
-                                                  Australia
-                                              </button>
-                                          </h5>
-                                      </div>
-                                      <div id="collapseThree4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample6">
-                                          <div class="card-body">
-                                              <i class="fas fa-circle status_F"></i>
-
-
-                                              All Systems Operational
-                                          </div>
-                                      </div>
-                                  </div>
-
-                                  <div class="card">
-                                      <div class="card-header" id="headingThree">
-                                          <h5 class="mb-0">
-                                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree">
-                                                  South America
-                                              </button>
-                                          </h5>
-                                      </div>
-                                      <div id="collapseThree5" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample7">
-                                          <div class="card-body">
-                                              <i class="fas fa-circle status_F"></i>
-
-
-                                              All Systems Operational
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-                  <!---->
-
-                  <div class="card">
-                      <div class="card-header" id="headingTwo">
-                          <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Eronelit JGA System | Quantum
-                              </button>
-                          </h5>
-                      </div>
-                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                          <div class="card-body">
-                              <i class="fas fa-circle status_F"></i>
-
-
-                              All Systems Operational
-                          </div>
-                      </div>
-                  </div>
-
-                  <!---->
-                  <div class="card">
-                      <div class="card-header" id="headingThree">
-                          <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Other (JGA Systems, Eronel SDK, Eronel WIKI, Demo...)
-                              </button>
-                          </h5>
-                      </div>
-                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                          <div class="card-body">
-                              <i class="fas fa-circle status_F"></i>
-
-
-                              All Systems Operational
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-          </div>
-      </div>
-      <!--<div class="planet"></div>-->
-
-
-
-
-      <div class="card mb-3 card-header" style="margin:50px;">
-          <div class="card-body ">
-              <h5 class="card-title">
-                  LEGEND
-              </h5>
-              <p class="card-text">
-                  <input type="text" id="myInput" onkeypress="return true;" onkeyup="myFunction()" placeholder="Search for names..." title="Type in a name">
-                  <table class="table" id="myTable">
-                      <thead>
-                          <tr>
-                              <th scope="col">Nymber</th> 
-                              <th scope="col">Name</th>
-                              <th scope="col">Symbol</th>
-                              <th scope="col">Description</th>
-                          </tr>
-                      </thead>
-                      <tbody>
-                          <tr>
-                              <th scope="row">1</th>
-                              <td>
-                                  Operational [Color ASO]
-                              </td>
-                              <td>
-                                  <i class="fas fa-circle status_F"></i>
-                              </td>
-                              <td> All Systems Operational</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">2</th>
-                              <td>
-                                  Operational [Color ASF]
-                              </td>
-                              <td>
-                                  <i class="fas fa-circle status_V"></i>
-                              </td>
-                              <td> 50% Systems Operational</td>
-                          </tr>
-                          <tr>
-                              <th scope="row">3</th>
-                              <td>
-                                  Failed status
-                              </td>
-                              <td>
-                                  <i class="fas fa-archive status_R"></i>
-                              </td>
-                              <td>It's not operational</td>
-                          </tr>
-                      </tbody>
-                  </table>
-            
-              
-              
-              
-                  <script>
-                      function myFunction() {
-                          var input, filter, table, tr, td, i;
-                          input = document.getElementById("myInput");
-                          filter = input.value.toUpperCase();
-                          table = document.getElementById("myTable");
-                          tr = table.getElementsByTagName("tr");
-                          for (i = 0; i < tr.length; i++) {
-                              td = tr[i].getElementsByTagName("td")[0];
-                              if (td) {
-                                  if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                                      tr[i].style.display = "";
-                                  } else {
-                                      tr[i].style.display = "none";
-                                  }
-                              }
-                          }
-                      }
-                  </script>
-              </p>
-
-          </div>
-      </div>
-  </main>
-
-
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="tmp/1query/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="tmp/1query/jquery-slim.min.js"><\/script>')</script>
-        <script src="tmp/1query/popper.min.js"></script>
-        <script src="tmp/1query/bootstrap.min.js"></script>
-        <script src="tmp/1query/holder.min.js"></script>
-        <script src="tmp/1query/m.js">
-
-        </script>
+    </div>
+
+
+    <div id="main2" style="display:none;">
+
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4 class="text-white">
+                                What is this page?
+                            </h4>
+                            <p class="text-muted">
+                                <!--Video-igra, video-igrica ili samo igrica je igra koja se igra uz pomoc%1 analognih ili digitalnih ra%Dunara ili igra%Dkih konzola priklju%Denih na ra%Dunar ili televizor. U novije vreme je jedan od najpopularnijih oblika zabave na svetu. Video igre se iz dana u dan razvijaju, i pobolj%1avaju im se tehni%Dke karakteristike. Postaju sve va%Eniji ekonomski faktori mnogih zemalja. Osnovni zahtevi video-igara su izlazni i ulazni grafi%Dki ure%1aji. Novije igre zahtevaju grafi%Dki procesor i mre%Enu opremu. %0to vreme dalje odmi%De i video igre postaju naprednije, tako im se povec%1avaju hardverski zahtevi tako da su potrebni sve ja%Di ra%Dunari da bi mogli pokrenuti.-->
+                                Eronelit ensures the performance and security of site owners over their intelligent global network. Among them are Servers that are for clients, my servers, test servers, Orbital Systems, JGA systems and others ...
+                                <br />
+                                - <a onclick="play3922()" style="cursor:pointer;">status.eronelit.com</a> -
+                            </p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4 class="text-white">Contact</h4>
+                            <ul class="list-unstyled">
+                                <li><a onclick="play3922()" style="color:#DAA520; cursor:pointer;">Follow on EronelWIKI</a></li>
+
+                                <!--<li><a href="#" class="text-white">Like on Facebook</a></li>
+                                <li><a href="#" class="text-white">Email me</a></li>-->
+                            </ul>
+                        </div>
+                        <script>
+                            function play3922() {
+                                window.open('http://wiki.eronelit.com', '_blank');
+
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-light box-shadow">
+                <div class="container d-flex justify-content-between">
+                    <a style="cursor:default; color:#DAA520; font-family:'D3'; font-weight:normal; font-style:normal;"
+                       class="navbar-brand d-flex align-items-center">
+
+                        <!--<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>-->
+                        Eronelit STATUS
+                    </a>
+                    <button id="button2" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars" style="color:#DAA520;"></i>
+                    </button>
+
+                </div>
+            </div>
+        </header>
+
+
+
+        <!--<section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Album example</h1>
+                <p class="lead text-muted">Something short and leading about the collection below%4its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p>
+            </div>
+        </section>-->
+        <main role="main">
+            <iframe role="main" class="okvri" src="index1.html"></iframe>
+        </main>
+
+
+        <footer id="futer" class="text-muted">
+            <div class="container">
+                <p class="float-right">
+                    <a style="cursor:pointer;">Back to top</a>
+                </p>
+                <p>2018 &copy; Eronelit</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="tmp/1query/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="tmp/1query/jquery-slim.min.js"><\/script>')</script>
+    <script src="tmp/1query/popper.min.js"></script>
+    <script src="tmp/1query/bootstrap.min.js"></script>
+    <script src="tmp/1query/holder.min.js"></script>
+    <script src="tmp/1query/m.js">
+
+    </script>
 </body>
 </html>
